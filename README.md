@@ -1,4 +1,4 @@
-# svn_database-disk-image-is-malformed
+# 轉載 svn_database-disk-image-is-malformed
 Tortoise SVN 異常處理
 Tortoise SVN 出現類似如下問題的兩種解決方案。
 svn出現類似如下問題的兩種解決方案。
