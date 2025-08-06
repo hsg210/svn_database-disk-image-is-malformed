@@ -7,9 +7,13 @@ svn: E200030: database disk image is malformed
 操作之前，切記備份.svn/wc.db
 在命令列終端cd到.svn資料夾，
 cd 項目資料夾/.svn
+
 sqlite3 wc.db "pragma integrity_check"
+
 sqlite3 wc.db "reindex nodes"
+
 sqlite3 wc.db "reindex pristine"
+
 
 至此，問題一般解決了。還不行，可以使用以下命令排查問題
 sqlite3 wc.db "select sql from sqlite_master where name='NODES'"
